@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dark Forest Codex Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+  <div class="codex">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+      <img id="displayImage" src="assets/ui/placeholder.png">
+
+      <div id="loreBox">
+        <h2>Welcome</h2>
+        <p>Select options to begin building your character.</p>
+        <p>If you find errors email: A.dash.of.Something.New@gmail.com</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+      <div class="step-header">
+        <h1 id="stepTitle">Choose Profession</h1>
+
+        <div class="nav nav-step">
+          <button type="button" onclick="prevStep()">Back</button>
+          <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <div class="step-toolbar">
+          <label class="mt-label">
+            <input type="checkbox" id="mtToggle" onchange="toggleMTMode()">
+            MT Mode
+          </label>
+
+          <select id="rankSelect" onchange="updateRank()">
+            <option value="1">Rank 1</option>
+            <option value="2">Rank 2</option>
+            <option value="3">Rank 3</option>
+            <option value="4">Rank 4</option>
+            <option value="5">Rank 5</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="cardContainer" class="cards"></div>
+
+      <div class="traits-stats-row">
+        <div class="traits-left">
+          <div id="traitsSection"></div>
+          <div id="traitPool"></div>
+        </div>
+
+        <div id="traitsStatsBox" class="stats-right"></div>
+      </div>
+
+      <pre id="summary"></pre>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= SUMMARY OVERLAY (FIXED) ================= -->
+<div id="summaryPage">
+
+  <div class="summary-topbar">
+    <button type="button" onclick="prevStep()">Back</button>
+    <button type="button" id="dossierPdfBtn" onclick="printCharacterSheet()">Download PDF</button>
+  </div>
+
+  <div class="summary-background">
+
+    <div class="sheet-page"><div id="page1"></div></div>
+    <div class="sheet-page"><div id="page2"></div></div>
+
+  </div>
+
+</div>
+
+<!-- PRINT SHEET -->
+<div id="characterSheet" class="print-only">
+
+  <header class="sheet-header">
+    <h1 id="sheetName">Character Name</h1>
+    <p id="sheetMeta">Profession • Rank • Race</p>
+  </header>
+
+  <section class="sheet-grid">
+
+    <div class="sheet-col">
+      <h2>Attributes</h2>
+      <div id="sheetStats"></div>
+
+      <h2>Traits</h2>
+      <div id="sheetTraits"></div>
+    </div>
+
+    <div class="sheet-col">
+      <h2>Abilities</h2>
+      <div id="sheetAbilities"></div>
+
+      <h2>Equipment</h2>
+      <div id="sheetEquipment"></div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <div id="sheetNotes"></div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
