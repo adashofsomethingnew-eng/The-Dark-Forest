@@ -46,25 +46,25 @@ const DEFLECT_TIERS = ["1d4","1d6","1d8","1d10","2d4","2d6","2d8","2d10"];
 
 const data = {
 profession: {
-  "Agent": {img: "assets/profession/agent.png", desc: "Operatives advancing faction agendas.", extra: "<strong>Mimic:</strong> Gain the attribute of another profession."},
-  "Analyst": {img: "assets/profession/analyst.png", desc: "Students of the natural world .", extra: "<strong>Finder:</strong> Gain Advantage to find natural resources." },
-  "Crafter": { img: "assets/profession/crafter.png", desc: "A builder, a wonderer, a seeker of fortune, undaunted by hard work.", extra: "<strong>Jury-Rig:</strong> Assemble items from other objects." },
-  "Diplomat": { img: "assets/profession/diplomat.png", desc: "A master of negotiation. Forging alliances, defusing tensions, and making deals through words and influence.", extra: "<strong>Diplomatic Immunity:</strong> Reroll failed manipulation check." },
-  "Medic": { img: "assets/profession/medic.png", desc: "Healers using science and magic.", extra: "<strong>Field Stabilizer:</strong> Stabilize dying ally or remove condition." },
-  "Mercenary": { img: "assets/profession/mercenary.png", desc: "Combat specialists for hire.", extra: "<strong>Professional's Edge:</strong> Reroll failed attack or condition check." },
-  "Navigator": { img: "assets/profession/navigator.png", desc: "A guide through the most hostile and shifting terrain.", extra: "<strong>Internal Compass:</strong> Know direction to previously visited location."},
-  "Relic Hunter": {img: "assets/profession/relic_hunter.png", desc: "A seeker of lost artifacts and ancient secrets.", extra: "<strong>Seeker:</strong> Advantage to find hidden caches." },
-  "Trader": {img: "assets/profession/trader.png", desc: "Shrewd dealmakers that turn opportunity into profit.", extra: "<strong>Trader's Deal:</strong> Reduce cost of items." },
-  "Video Star": { img: "assets/profession/video_star.jpeg", desc: "A celebrity who uses fame to entertain and sway the masses.", extra: "<strong>Fan Service:</strong> Reroll failed social check."},
-  "Warden": {img: "assets/profession/warden.jpg", desc: "A steadfast guardian who protects people from the threats of The Dark Forest.", extra: "<strong>Mist Anchor:</strong> Protect area from the mists." },
+  "Agent": {img: "assets/profession/Agent.png", desc: "Operatives advancing faction agendas.", extra: "<strong>Mimic:</strong> Gain the attribute of another profession."},
+  "Analyst": {img: "assets/profession/Analyst.png", desc: "Students of the natural world .", extra: "<strong>Finder:</strong> Gain Advantage to find natural resources." },
+  "Crafter": { img: "assets/profession/Crafter.png", desc: "A builder, a wonderer, a seeker of fortune, undaunted by hard work.", extra: "<strong>Jury-Rig:</strong> Assemble items from other objects." },
+  "Diplomat": { img: "assets/profession/Diplomat.png", desc: "A master of negotiation. Forging alliances, defusing tensions, and making deals through words and influence.", extra: "<strong>Diplomatic Immunity:</strong> Reroll failed manipulation check." },
+  "Medic": { img: "assets/profession/Medic.png", desc: "Healers using science and magic.", extra: "<strong>Field Stabilizer:</strong> Stabilize dying ally or remove condition." },
+  "Mercenary": { img: "assets/profession/Mercenary.png", desc: "Combat specialists for hire.", extra: "<strong>Professional's Edge:</strong> Reroll failed attack or condition check." },
+  "Navigator": { img: "assets/profession/Navigator.png", desc: "A guide through the most hostile and shifting terrain.", extra: "<strong>Internal Compass:</strong> Know direction to previously visited location."},
+  "Relic Hunter": {img: "assets/profession/Relic_Hunter.png", desc: "A seeker of lost artifacts and ancient secrets.", extra: "<strong>Seeker:</strong> Advantage to find hidden caches." },
+  "Trader": {img: "assets/profession/Trader.png", desc: "Shrewd dealmakers that turn opportunity into profit.", extra: "<strong>Trader's Deal:</strong> Reduce cost of items." },
+  "Video Star": { img: "assets/profession/Video_Star.jpeg", desc: "A celebrity who uses fame to entertain and sway the masses.", extra: "<strong>Fan Service:</strong> Reroll failed social check."},
+  "Warden": {img: "assets/profession/Warden.jpg", desc: "A steadfast guardian who protects people from the threats of The Dark Forest.", extra: "<strong>Mist Anchor:</strong> Protect area from the mists." },
 },
 
 ability: {
-  "Blink": { img: "assets/ability/blink.png", desc: "Teleport short distances." },
+  "Blink": { img: "assets/ability/Blink.png", desc: "Teleport short distances." },
   "Blood Warrior": { img: "assets/ability/Blood Warrior.png", desc: "Keep fighting past 0 HP." },
   "Guardian's Rally": { img: "assets/ability/Guardian's Rally.png", desc: "Provide allies with stamina and buffs." },
-  "Healing": { img: "assets/ability/healing.png", desc: "Provide allies with health and buffs." },
-  "Iron Guard": { img: "assets/ability/iron guard.png", desc: "Create a barrier to protect allies." },
+  "Healing": { img: "assets/ability/Healing.png", desc: "Provide allies with health and buffs." },
+  "Iron Guard": { img: "assets/ability/Iron Guard.png", desc: "Create a barrier to protect allies." },
   "Me, Myself, and I": { img: "assets/ability/Me, Myself, and I.png", desc: "Unite mind, body, and Soul. Communicate with animals." },
   "Mist Veil": { img: "assets/ability/Mist Veil.png", desc: "Conjure mists." },
   "Overload": { img: "assets/ability/Overload.png", desc: "Empower your attacks." },
@@ -166,37 +166,37 @@ abilityUpgrades: {
 
 race: {
   "Anthelid": {
-    img: "assets/race/anthelid.png",
+    img: "assets/race/Anthelid.png",
     desc: "An ant-like people devoted to the good of the hive.",
     extra: "<strong>Hivemind:</strong> Communicate telepathically with other Anthelid. <br><strong>Replaceable Drone:</strong> When killed, they can be replaced by the hive."
   },
   "Dirgan": {
-    img: "assets/race/dirgan.png",
+    img: "assets/race/Dirgan.png",
     desc: "Ethereal creatures that possess the corpses of other races.",
     extra: "<strong>Possession:</strong> Occupy the corpse of another race, gaining the features of the host body."
   },
   "Fiddlin": {
-    img: "assets/race/fiddlin.png",
+    img: "assets/race/Fiddlin.png",
     desc: "A small race of four-armed bear-like people.",
     extra: "<strong>Quick Craft:</strong> Crafting time reduced to 1/4."
   },
   "Nuldrathi": {
-    img: "assets/race/nuldrathi.png",
+    img: "assets/race/Nuldrathi.png",
     desc: "Crystal beings born from extremes in temperature.",
     extra: "<strong>Crystal Growth:</strong> A Crystal shield providing temp HP."
   },
   "Solari": {
-    img: "assets/race/solari.png",
+    img: "assets/race/Solari.png",
     desc: "Uplifted animals of all species.",
     extra: "<p><strong>Nature:</strong> Gain feature based on your animal type.</p> <p> * Feature not calculated in the character Builder."
   },
   "Stitchwork": {
-    img: "assets/race/stitchwork.png",
+    img: "assets/race/Stitchwork.png",
     desc: "A living construct composed of fabric, metal, or flesh.",
     extra: "<strong>Self Repair:</strong> Heal twice as fast with access to replacement parts. <br><strong>Masquerade:</strong> Advantage on evasion while motionless near trash."
   },
   "Terran": {
-    img: "assets/race/terran.png",
+    img: "assets/race/Terran.png",
     desc: "Modern humans of Earth.",
     extra: "<strong>Domestication:</strong> Start with the Summon Pack technique."
   }
