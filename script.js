@@ -2201,8 +2201,7 @@ function updateStats(){
   const Leadership = val("Charisma") + val("Recall");
 
   const CombatAwareness = Reflexes;
-  const MaxStamina = Math.max(1, Fortitude);
-  const MaxHealth = val("Power") + val("Endurance") + 5;
+  const MaxStamina = Math.max(1, (val("Will") + val("Endurance")));
   const Speed = Math.max(2, Physicality * 5);
   const CoreVitality = 10;
   const cvRemaining = computeCyberTotals().cvRemaining;
