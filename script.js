@@ -1599,7 +1599,7 @@ document.getElementById("page1").innerHTML = `
     <h2>Combat Stats</h2>
     <p><strong>Speed: </strong>${Math.max(2, (stats.Power + stats.Agility) * 5)}</p>
     <p><strong>Max Health: </strong>${stats.Power + stats.Endurance + 5}</p>
-    <p><strong>Max Stamina: </strong>${stats.Will + stats.Endurance}</p>
+    <p><strong>Max Stamina: </strong>${Math.max(1,(stats.Will + stats.Endurance))}</p>
     <p><strong>Max Core Vitality: </strong>${computeCyberTotals().cvRemaining}</p>
   </div>
 
