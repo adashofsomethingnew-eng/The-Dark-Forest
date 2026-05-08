@@ -220,7 +220,7 @@ techniques: {
   physical: [
     { name:"Rapid Assault", type:"physical", extra:"Two attacks, second at disadvantage", affluence:1, access:1, req:{ Reflexes:0 } },
     { name:"Retaliatory Strike", type:"physical", extra:"Attack a target that just hit you", affluence:1, access:1, req:{ Agility:0 } },
-    { name:"Precision Strike", type:"physical", extra:"Gain advantage on a single attack", affluence:1, access:2, req:{ Perception:0 } },
+    { name:"Precision Strike", type:"physical", extra:"Gain advantage on a single attack", affluence:1, access:2, req:{ Intellect:0 } },
     { name:"Focused Barrage", type:"physical", extra:"Each hit increases damage (+1, +2, +3...)", affluence:2, access:1, req:{ Physicality:0 } },
     { name:"Bleeding Strike", type:"physical", extra:"Inflict bleeding on target", affluence:2, access:2, req:null },
     { name:"Reckless Attack", type:"physical", extra:"Take damage risk for double damage next attack", affluence:2, access:2, req:{ Power:1 } },
